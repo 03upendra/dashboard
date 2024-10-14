@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html suppressHydrationWarning>
       <body>
         <AntdRegistry>
           <div className="flex flex-col min-h-screen mx-auto max-w-screen-2xl">

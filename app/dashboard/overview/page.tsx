@@ -1,4 +1,5 @@
 import OverviewCards from "@/components/OverviewCards";
+// import OverviewChart from "@/components/OverviewChart";
 import OverviewTable from "@/components/OverviewTable";
 import {
   DollarCircleOutlined,
@@ -25,7 +26,7 @@ export default function Overview() {
             />
           }
           title={"Orders"}
-          value={1200}
+          value={1255}
         />
         <OverviewCards
           icon={
@@ -40,7 +41,7 @@ export default function Overview() {
             />
           }
           title={"Inventory"}
-          value={1200}
+          value={4000}
         />
         <OverviewCards
           icon={
@@ -55,7 +56,7 @@ export default function Overview() {
             />
           }
           title={"Users"}
-          value={1200}
+          value={1250}
         />
         <OverviewCards
           icon={
@@ -70,10 +71,14 @@ export default function Overview() {
             />
           }
           title={"Revenue"}
-          value={1200}
+          value={25000}
         />
       </div>
-        <OverviewTable/>
+        <div className="flex justify-evenly">
+        <OverviewTable />
+        {/* <OverviewChart/> */}
+
+        </div>
     </div>
   );
 }
